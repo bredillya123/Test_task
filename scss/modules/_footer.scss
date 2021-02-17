@@ -1,0 +1,84 @@
+.footer {
+    width: 100%;
+    background: #081D31;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+
+    &__nav {
+        padding-top: 117px;
+        padding-bottom: 39px;
+        border-bottom: 1px solid #F2F6FA;
+    }
+
+    &__emblem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: capitalize;
+
+        &--big {
+            text-transform: uppercase;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__socials {
+        display: flex;
+    }
+
+    &__link {
+        margin-right: 28px;
+    }
+
+    &__setting {
+        width: 100%;
+        margin-top: 27px;
+        padding-bottom: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__eng {
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: capitalize;
+        margin-right: 36px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            margin-left: 13px;
+            width: 9px;
+            height: 5px;
+            background: url(/images/icons/arrow-white.svg) no-repeat;
+        }
+    }
+}
