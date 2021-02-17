@@ -530,7 +530,7 @@ body, html {
 }
 
 .consent {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .consent__elem {
