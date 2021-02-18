@@ -48,8 +48,30 @@
 				<a href="#" class="setting__login">Log in</a>
 			</div>
 
+			<div class="burger">
+				<a href="#none" class="burger__btn">
+					<span class="burger__line"></span>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="accordion">
+			<div class="accordion__list">
+				<a href="#" class="accordion__link">Menu</a>			
+				<a href="#" class="accordion__link">Menu 2</a>				
+				<a href="#" class="accordion__link">Menu 3</a>				
+				<a href="#" class="accordion__link">Menu 4</a>
+			</div>
+
+			<div class="accordion__settings">
+				<a href="#" class="setting__lang setting__lang--arrow accordion__set">Eng</a>
+				<a href="#" class="setting__login accordion__set">Log in</a>
+			</div>
+						
 		</div>
 	</div>
+
 </header><!-- section header and navigation -->
 
 <section class="content">
@@ -375,10 +397,10 @@
 $(document).ready(function () {
 
 // for burger mobile version
-  $('.').on('click', function(e){
+$('.burger__btn').on('click', function(e){
       e.preventDefault;
-      $(this).toggleClass('--active');
-	  $('.accordion').toggleClass('accordion--active');
+      $(this).toggleClass('burger__btn--active');
+      $('.accordion').toggleClass('accordion--active');
   })
 
 })
